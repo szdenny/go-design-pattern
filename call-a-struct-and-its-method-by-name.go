@@ -10,6 +10,6 @@ func (t *T) Foo(){
 }
 
 func main(){
-    var t T
+    t := T{}
     reflect.ValueOf(&t).MethodByName("Foo").Call([]reflect.Value{})
 }
